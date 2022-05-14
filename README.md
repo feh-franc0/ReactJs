@@ -1,17 +1,15 @@
-# Por projeto React em produção
+# Componentes e propriedades
 
-Antes de tudo vamos no arquivo "package.json" e vamos adicionar a opção `"homepage":"www.suaURL.com"`,
-Como estamos localmente vai ficar da seguinte forma:
+### Componentes:
 
-    {
-        "homepage":".",
-        "name":"meu-app",
-        ...resto do codigo...,
-    }
+- Componente é um conjunto de elementos ou mais compactados em apenas uma coisa só.
 
-    
-### Comando para criar nosso projeto que vai estar em produção
-`vai cirar um arquivo 'build', esse arquivo que vai para produção`
+- Criamos um arquivo para o nosso componenete, o arquivo sempre tendo o nome igual ao do componente que contem dentro dele e quando quisermos usar-lo chamamos o arquivo que tem o nosso componente e vamos importalo para o arquivo onde vamos usar o mesmo.
 
-    npm run build
+### Propriedades:
 
+- Podemos ajustar os componentes através de suas propriedades e a gente pode passar as propriedade para um componente filho ex: <Header> que é filho de App , atravês de atributos ex: name="José"
+ 
+### Tela em React:
+
+`No final das contas uma tela criada com react vai ser um conjunto de varios Componentes, esse componentes por dentro tem suas propriedades que podem receber valor atravês de seus atributos`
