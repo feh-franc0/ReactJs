@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from './Header';
+import Counter from './Counter'
 import './App.css';
 
 function App() {
   return (
-    //* COMPONENTE(Header) / PROPRIEDADE(name,links)
-    <Header name="ProgBr" links={["Sobre", "Comprar", "Contato", "Login","sobre"]}></Header>
+    <div>
+      <Header name="ProgBr" links={["Sobre", "Comprar", "Contato", "Login", "sobre"]}></Header>
+      <Counter count={0}></Counter>
+    </div>
   );
 }
 
