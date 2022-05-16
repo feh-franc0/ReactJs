@@ -2,15 +2,18 @@ import React from "react";
 import Menu from "./Menu";
 import './App.css'
 
+class Header extends React.Component{
+    constructor(props){
+        super(props);
+    }
 
-function Header(props) { //* 'props' vem de Propriedades
-
-    return (
-        <header className='header'>
-            <h1>{props.name}</h1>
-            <Menu links={props.links}></Menu>
-        </header>)
-
+    render() {
+        return (
+            <header className='header'>
+                <h1>{this.props.name}</h1>
+                <Menu links={this.props.links}></Menu>
+            </header>);
+    }
 
 }
 
